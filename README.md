@@ -305,10 +305,4 @@ Add screenshots of:
 
 # 👥 Contributors
 
-Developed as part of a Cloud & DevOps Bootcamp Group Capstone Project.
-
----
-
-# 📄 License
-
-This project is for educational purposes as part of a DevOps and Cloud Engineering capstone project.
+cloned this repo from the project leader before dockerisings it, writing the vm script, updated the errors gotton for the backend and frontend to work from port 5000 to port 80.
