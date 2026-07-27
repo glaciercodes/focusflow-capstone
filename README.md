@@ -160,6 +160,8 @@ DB_NAME=postgres
 DB_USER=YOUR_DATABASE_USER
 
 DB_PASSWORD=YOUR_PASSWORD
+
+NOTE:  "copy .env.example to .env and set a real password."
 ```
 
 ---

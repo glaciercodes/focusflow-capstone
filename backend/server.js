@@ -18,6 +18,17 @@ app.get("/", (req, res) => {
     });
 });
 
+const pool = require("./db");
+
+app.get("/health", async (req, res) => {
+    try {
+        await pool.query("SELECT 1");
+        res.json({ status: "healthy", db: "connected" });
+    } catch (err) {
+        res.status(500).json({ status: "unhealthy", db: "unreachable" });
+    }
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
